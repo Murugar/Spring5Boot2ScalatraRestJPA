@@ -26,7 +26,7 @@ class Application {
   def customServletRegistrationBean(customServlet : CustomServlet) = new ServletRegistrationBean(customServlet, "/*")
 
   @Bean
-  def customServlet(dataSource : DataSource) = new CustomServlet(dataSource)
+  def customServletTest(dataSource : DataSource) = new CustomServlet(dataSource)
 
 }
 
